@@ -30,14 +30,33 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#noButton {
-    position: static; /* Remove fixed positioning */
-    transform: none; /* Remove translation */
-    margin-left: 0; /* Remove horizontal offset */
+/* #noButton {
+    position: static; /* Remove fixed positioning
+    transform: none; /* Remove translation
+    margin-left: 0; /* Remove horizontal offset
 }
 
 #yesButton {
-    margin-right: 0; /* Remove horizontal offset */
+    margin-right: 0; /* Remove horizontal offset
+}
+*/
+
+#noButton {
+    position: fixed; /* Changed from absolute */
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+    transition: 0.5s;
+    border: 2px solid #ffffff;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 0;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
