@@ -7,21 +7,26 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    touch-action: manipulation;
 }
 
 .container {
     max-width: 800px;
     width: 90%;
     text-align: center;
+    padding: 20px;
 }
 
-/* Position the "No" button absolutely within body */
+/* Button styles */
 #noButton {
-    position: absolute;
+    position: fixed; /* Changed from absolute */
+    transform: translate(-50%, -50%);
     margin-left: 150px;
     transition: 0.5s;
     border: 2px solid #ffffff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a 2px horizontal, 2px vertical, 5px blur, and 0.3 opacity shadow */
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #yesButton {
@@ -102,4 +107,25 @@ img {
     p {
         font-size: 0.9rem;
     }
+}
+
+/* Add at the bottom of the file */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #noButton, #yesButton {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .header_text {
+        font-size: 1.5rem;
+    }
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
 }
