@@ -43,7 +43,7 @@ body {
 
 #noButton {
     position: fixed; /* Changed from absolute */
-    transform: translate(-50%, -50%);
+    transform: translate(150%, 0%);
     margin-left: 0;
     transition: 0.5s;
     border: 2px solid #ffffff;
