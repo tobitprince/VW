@@ -86,3 +86,49 @@ body {
     align-items: flex-end; /* Align to the bottom */
     margin-left: 20px; /* Adjusted for consistency */
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #noButton, #yesButton {
+        margin: 5px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add at the bottom of the file */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    /* #noButton, #yesButton {
+        font-size: 1rem;
+        padding: 8px 16px;
+    } */
+
+    .header_text {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    #yesButton, #noButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
